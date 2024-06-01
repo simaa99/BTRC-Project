@@ -1,0 +1,22 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  direction: ltr;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  background-image: url(/images/background-image.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #222222;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+}
