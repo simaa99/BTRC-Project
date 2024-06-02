@@ -10,10 +10,7 @@ body {
   direction: ltr;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  background-image: url(/images/background-image.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #d8c9bb;
   color: #222222;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -23,21 +20,30 @@ body {
 
 /* Header styling */
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
   background-color: #272727;
   color: #828282;
   padding: 5px 0px;
   text-align: left;
   margin-bottom: 20px;
-  position: fixed;
+  position: absolute;
   top: 0;
+  overflow: hidden;
+  z-index: 100;
 }
+
 .wetrust-loop-container {
   width: 100%;
   height: 100%;
   display: flex;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: center;
   animation: translateLoop 20s linear infinite;
 }
+
 .wetrust-content {
   display: flex;
   flex-direction: row;
@@ -48,6 +54,7 @@ header {
   font-size: 10px;
   line-height: 16px;
 }
+
 /* Text and dash styling */
 .wetrust-text,
 .wetrust-dash {
@@ -57,25 +64,391 @@ header {
 
 /* Navigation styling */
 nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
   background-color: transparent;
   padding: 40px 33px;
   text-align: left;
   margin-bottom: 20px;
-  position: fixed;
+  position: absolute;
   top: 0;
+  z-index: 1;
 }
 
-nav img {
+nav > div > img {
   width: 130px;
   height: 49px;
 }
 
-/* Animation */
+/* Main content styling */
+main {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Hero section styling */
+main > .hero {
+  width: 100%;
+  display: flex;
+  background-image: url(/images/background-image.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero > .hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container styling for larger screens */
+.container-large {
+  width: 100%;
+  margin: auto 0px;
+  max-width: 120rem;
+}
+
+/* Hero content view styling */
+.hero-content-view {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.hero-content-view > .hero-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Hero image view styling */
+.hero-top > .hero-image-view {
+  display: flex;
+  width: 100%;
+  height: 58rem;
+  max-width: 100%;
+}
+
+.hero-image-view > img {
+  width: 110%;
+  object-fit: contain;
+  position: relative;
+  right: 5%;
+  mix-blend-mode: multiply;
+}
+
+/* Hero text content styling */
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  padding: 12% 0rem 0rem 10%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+  max-width: 110%;
+  z-index: 1;
+}
+
+.hero-text > h1 {
+  font-size: 4.5rem;
+  color: #222222;
+  margin-bottom: 2.125rem;
+  font-weight: 700;
+  line-height: 5.375rem;
+}
+
+.hero-text > p:first-of-type {
+  font-size: 1.375rem;
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.hero-text > p:last-child {
+  font-size: 1.375rem;
+  color: #222222;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+/* Hero bottom image styling */
+.hero-bottom-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 48rem;
+  height: 35rem;
+  background-image: url(/images/ellipse-hero-bottom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  left: 26%;
+  top: 45%;
+  z-index: 0;
+}
+
+.hero-bottom-image > img {
+  width: 41%;
+  height: 100%;
+  position: relative;
+  top: -0.5rem;
+  object-fit: contain;
+}
+
+/* Hero bottom section styling */
+.hero-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 1;
+  padding-top: 5rem;
+}
+
+.hero-bottom > p {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-style: italic;
+  text-align: center;
+  width: 70rem;
+  padding: 0px 1.688rem;
+  max-width: 100%;
+}
+
+/* Absolute hero image styling */
+.absolute-hero {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  z-index: 0;
+}
+
+.absolute-hero > .ellipse-hero {
+  position: absolute;
+  left: 5%;
+  width: 33rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Watch hero image styling */
+.watch-hero {
+  position: absolute;
+  mix-blend-mode: multiply;
+  z-index: 0;
+  width: 28%;
+  height: 52rem;
+  object-fit: contain;
+  float: left;
+  top: 11rem;
+}
+
+/* Eye view styling */
+.eye-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 8.4rem;
+  position: fixed;
+  top: 75%;
+  right: 2%;
+  background-image: url(/images/Eye.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+
+.eye-view > div {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.eye-view > img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+/* Animation for looping text */
 @keyframes translateLoop {
   from {
     transform: translate3d(0, 0, 0);
   }
   to {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Responsive design for different screen sizes */
+@media only screen and (max-width: 1650px) {
+  .hero-text > h1 {
+    font-size: 3.8rem;
+    margin-bottom: 2.125rem;
+    line-height: 5rem;
+  }
+  .hero-text > p:first-of-type {
+    font-size: 1.35rem;
+  }
+  .hero-text > p:last-child {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .hero-text > h1 {
+    font-size: 3rem;
+    margin-bottom: 2.125rem;
+    line-height: 3.5rem;
+  }
+  .hero-text > p:first-of-type {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .hero-text > p:last-child {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  .hero-top > .hero-image-view {
+    height: 33rem;
+  }
+  .hero-bottom-image {
+    width: 30rem;
+    height: 25rem;
+    top: 42.5%;
+  }
+  .hero-bottom {
+    padding-top: 8rem;
+  }
+  .hero-bottom > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 45rem;
+  }
+  .watch-hero {
+    top: -1rem;
+  }
+  .eye-view {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .hero-content-view {
+    padding-top: 3rem;
+  }
+  .hero-content-view > .hero-top {
+    flex-direction: column-reverse;
+  }
+  .hero-image-view > img {
+    width: 95%;
+    right: 0%;
+    margin-left: auto;
+  }
+  .hero-top > .hero-image-view {
+    height: auto;
+  }
+  .hero-text-content {
+    padding: 0% 1.688rem 0rem 1.688rem;
+  }
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+  .hero-text > h1 {
+    font-size: 4.5rem;
+    color: #222222;
+    margin-bottom: 2.125rem;
+    font-weight: 700;
+    line-height: 5.375rem;
+  }
+  .hero-text > p:first-of-type {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+  .hero-text > p:last-child {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+  }
+  .hero-bottom {
+    padding-top: 0rem;
+  }
+  .hero-bottom-image {
+    position: static;
+    width: 100%;
+    height: 40rem;
+  }
+  .absolute-hero {
+    display: none;
+  }
+  .watch-hero {
+    display: none;
+  }
+  .eye-view {
+    top: 55%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    padding: 40px 20px;
+  }
+  nav > div > img {
+    width: 91px;
+    height: 32px;
+  }
+  .hero-text > h1 {
+    font-size: 2.375rem;
+    margin-bottom: 2.125rem;
+    line-height: 2.875rem;
+  }
+  .hero-text > p:first-of-type {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-bottom > p {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+  .hero-text > p:last-child {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .hero-bottom-image {
+    height: 30rem;
+  }
+  .eye-view {
+    top: 40%;
+  }
+}
+
+@media only screen and (max-width: 478px) {
+  .hero-bottom-image {
+    height: 20rem;
   }
 }
