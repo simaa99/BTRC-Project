@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Callient";
+  src: url(/font/fonnts.com-Callient.ttf);
+  font-weight: 400;
+}
+
 /* Basic reset */
 * {
   margin: 0;
@@ -85,6 +91,7 @@ nav > div > img {
 /* Main content styling */
 main {
   display: flex;
+  flex-direction: column;
   width: 100%;
   overflow: hidden;
 }
@@ -214,10 +221,12 @@ main > .hero {
 /* Hero bottom section styling */
 .hero-bottom {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   z-index: 1;
   padding-top: 5rem;
+  gap: 2.5rem;
 }
 
 .hero-bottom > p {
@@ -228,6 +237,16 @@ main > .hero {
   width: 70rem;
   padding: 0px 1.688rem;
   max-width: 100%;
+}
+.hero-bottom > button {
+  background-color: #000000;
+  color: #c0c0c0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1.188rem 3.75rem;
+  width: 15.625rem;
+  cursor: pointer;
 }
 
 /* Absolute hero image styling */
@@ -295,6 +314,113 @@ main > .hero {
   mix-blend-mode: multiply;
 }
 
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about-section {
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.about-image {
+  width: 70rem;
+  height: 58rem;
+  max-width: 100%;
+  max-height: 100%;
+  background-image: url(/images/back.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 68rem;
+  max-width: 80%;
+  row-gap: 2.875rem;
+  padding: 12% 0rem 0rem 10%;
+  margin-left: 1rem;
+}
+.about-content > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: #222222;
+  row-gap: 1.5rem;
+}
+.about-content > div:last-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-content > div:last-of-type > a {
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+  color: #000000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about-content > div:last-of-type > p {
+  font-size: 2.5rem;
+  line-height: 3.75rem;
+  color: #424242;
+  font-family: "Callient";
+  position: relative;
+  transform: rotate(-8deg);
+  left: 15%;
+  text-align: center;
+}
+.intrested-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 16rem;
+}
+.intrested-absolute {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.intrested-absolute > img:first-of-type {
+  position: absolute;
+  right: -7%;
+  left: auto;
+  width: 35%;
+  height: 40rem;
+  object-fit: contain;
+  top: -35%;
+  mix-blend-mode: multiply;
+}
+.intrested-absolute > img:last-of-type {
+  width: 37%;
+  height: 60rem;
+  object-fit: contain;
+  position: absolute;
+  left: 0%;
+  top: -65%;
+  max-width: 100%;
+}
+.intrested-p > p {
+  width: 50rem;
+}
+
 /* Animation for looping text */
 @keyframes translateLoop {
   from {
@@ -306,6 +432,14 @@ main > .hero {
 }
 
 /* Responsive design for different screen sizes */
+@media only screen and (max-width: 1820px) {
+  .about-image {
+    background-size: contain;
+  }
+  .about-image > img {
+    object-fit: contain;
+  }
+}
 @media only screen and (max-width: 1650px) {
   .hero-text > h1 {
     font-size: 3.8rem;
@@ -317,6 +451,16 @@ main > .hero {
   }
   .hero-text > p:last-child {
     font-size: 1.35rem;
+  }
+  .about-content > div:last-of-type > p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .intrested-view {
+    padding-bottom: 13rem;
+  }
+  .intrested-p > p {
+    width: 45rem;
   }
 }
 
@@ -340,21 +484,36 @@ main > .hero {
   .hero-bottom-image {
     width: 30rem;
     height: 25rem;
-    top: 42.5%;
+    top: 38.5%;
   }
   .hero-bottom {
-    padding-top: 8rem;
+    padding-top: 10rem;
   }
   .hero-bottom > p {
     font-size: 1.5rem;
     line-height: 2rem;
     width: 45rem;
   }
+
   .watch-hero {
     top: -1rem;
   }
   .eye-view {
     top: 40%;
+  }
+  .about-image {
+    width: 70rem;
+    height: 58rem;
+    background-size: contain;
+  }
+  .intrested-view {
+    padding-bottom: 12rem;
+  }
+  .intrested-p > p {
+    width: 35rem;
+  }
+  .intrested-p {
+    padding-top: 3rem;
   }
 }
 
@@ -412,6 +571,60 @@ main > .hero {
   .eye-view {
     top: 55%;
   }
+  .about-section {
+    flex-direction: column;
+  }
+  .about-image {
+    height: auto;
+  }
+  .about-content {
+    padding: 0% 0rem 0rem 0%;
+    margin-left: 0rem;
+    max-width: 100%;
+  }
+  .about-content > div:first-of-type {
+    padding: 0% 1.688rem 0rem 1.688rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .about-content > div:last-of-type {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-content > div:last-of-type > p {
+    left: 0%;
+  }
+  .about {
+    margin-top: 8rem;
+  }
+  .about-image {
+    background-position: 0% -3rem;
+  }
+  .intrested-view {
+    flex-direction: column-reverse;
+    padding-bottom: 0rem;
+  }
+  .intrested-absolute {
+    display: flex;
+    position: relative;
+  }
+  .intrested-absolute > img:first-of-type {
+    display: none;
+  }
+  .intrested-absolute > img:last-of-type {
+    width: 100%;
+    height: auto;
+    position: relative;
+    left: auto;
+    top: -6rem;
+  }
+  .intrested-p {
+    position: relative;
+    top: -6rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -450,5 +663,9 @@ main > .hero {
 @media only screen and (max-width: 478px) {
   .hero-bottom-image {
     height: 20rem;
+  }
+  .about-content > div:last-of-type > p {
+    font-size: 1.875rem;
+    line-height: 3.75rem;
   }
 }
