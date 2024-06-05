@@ -420,7 +420,222 @@ main > .hero {
 .intrested-p > p {
   width: 50rem;
 }
-
+/* Researcher Section */
+.researcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.researcher-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.researcher-item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+.researcher-image {
+  width: 62%;
+  height: 47rem;
+  position: relative;
+  right: 8%;
+  top: 2rem;
+}
+.researcher-image > img:first-of-type {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+.researcher-section > img {
+  width: 23.5%;
+  position: absolute;
+  right: 0%;
+  left: auto;
+  top: -10%;
+  bottom: 0%;
+  z-index: 0;
+  mix-blend-mode: multiply;
+}
+.researcher-image > img:last-of-type {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  right: 0%;
+  left: -20%;
+  top: -15%;
+  bottom: 0%;
+}
+.researcher-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4.25rem;
+  padding: 0% 0rem 0rem 10%;
+  position: relative;
+  z-index: 1;
+}
+.researcher-content-two {
+  padding: 0% 0rem 0rem 0%;
+}
+.researcher-content > h2 {
+  font-size: 3.25rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+.researcher-content > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  width: 78%;
+}
+.researcher-content > div > h3 {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+.researcher-content > div > ul {
+  margin-left: 2rem;
+}
+.researcher-item-two {
+  position: relative;
+  top: -8rem;
+}
+.researcher-image-2 {
+  position: relative;
+  padding-right: 1rem;
+  padding-left: 10%;
+}
+.researcher-image-2 > img:first-of-type {
+  width: 90%;
+  height: 47rem;
+  position: relative;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+  top: -9rem;
+}
+.researcher-image-2 > img:last-of-type {
+  position: absolute;
+  left: -8%;
+  bottom: -3%;
+  width: 40%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  z-index: 0;
+}
+.researcher-item > img:first-of-type {
+  position: absolute;
+  width: 28%;
+  height: 40rem;
+  left: -6%;
+  top: -22%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.researcher-item > img:last-of-type {
+  position: absolute;
+  width: 20%;
+  left: auto;
+  right: 0%;
+  top: -15%;
+  margin: 0px auto 0px 0px;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.researcher-content-two > div {
+  width: 100%;
+  position: relative;
+  left: -5rem;
+}
+.researcher-bird {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: flex-end;
+  top: -9rem;
+}
+.researcher-bird > .researcher-image {
+  width: 60%;
+  position: absolute;
+  right: 0;
+  height: 60rem;
+  top: -200%;
+}
+.researcher-content-3 {
+  width: 100%;
+  top: -4rem;
+}
+.researcher-bird > .researcher-image > img:last-of-type {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  right: 0%;
+  left: 0%;
+  top: auto;
+  bottom: auto;
+}
+.researcher-image-3 {
+  position: relative;
+  padding-right: 1rem;
+  left: 0%;
+  height: 50rem;
+}
+.researcher-image-3 > img:first-of-type {
+  width: 130%;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: multiply;
+  object-fit: contain;
+  top: -10rem;
+  right: 2.3rem;
+}
+.padding-research {
+  position: relative;
+  top: 5rem;
+  width: 50%;
+  left: 8%;
+}
+.women-image {
+  width: 28%;
+  height: 35rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  mix-blend-mode: multiply;
+  top: -7rem;
+  right: -6%;
+}
+.women-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.padding-research > div {
+  left: 0rem;
+}
+.women-view {
+  position: relative;
+  top: 3rem;
+}
+.women-view > img:last-of-type {
+  position: absolute;
+  width: 27%;
+  height: 40rem;
+  object-fit: contain;
+  top: 20%;
+}
+.bottom-intresting {
+  padding-top: 0px;
+  top: -8rem;
+  height: 2rem;
+  position: relative;
+}
 /* Animation for looping text */
 @keyframes translateLoop {
   from {
@@ -461,6 +676,22 @@ main > .hero {
   }
   .intrested-p > p {
     width: 45rem;
+  }
+  .researcher-item > img:first-of-type {
+    height: 35rem;
+  }
+  .researcher-image-2 > img:last-of-type {
+    bottom: 4%;
+  }
+  .researcher-content-two > div {
+    width: 90%;
+  }
+  .padding-research {
+    width: 40%;
+    left: 3%;
+  }
+  .researcher-image-3 > img:first-of-type {
+    width: 110%;
   }
 }
 
@@ -514,6 +745,60 @@ main > .hero {
   }
   .intrested-p {
     padding-top: 3rem;
+  }
+  .bottom-intresting {
+    padding-top: 0px;
+  }
+  .researcher-content {
+    gap: 3rem;
+  }
+  .researcher-content > h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .researcher-content > div {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .researcher-content > div > h3 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .researcher-content > div > ul {
+    margin-left: 2rem;
+  }
+  .researcher-image {
+    height: 38rem;
+  }
+  .researcher-content-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 5rem;
+  }
+  .researcher-image-3 {
+    height: auto;
+  }
+  .women-image {
+    height: 32rem;
+    top: -18rem;
+    width: 45%;
+  }
+  .padding-research {
+    width: 60%;
+    left: -2%;
+    top: -9rem;
+  }
+
+  .researcher-image-3 > img:first-of-type {
+    width: 100%;
+  }
+  .women-view > img:last-of-type {
+    top: -19%;
+  }
+  .bottom-intresting {
+    padding-top: 0px;
+    height: 5rem;
   }
 }
 
@@ -625,6 +910,125 @@ main > .hero {
     position: relative;
     top: -6rem;
   }
+  .researcher-item {
+    flex-direction: column-reverse;
+  }
+  .researcher-image {
+    width: 100%;
+    height: auto;
+    right: 0%;
+    top: 0rem;
+  }
+  .researcher-image > img:first-of-type {
+    right: -15%;
+  }
+  .researcher-section > img {
+    display: none;
+  }
+  .researcher-image > img:last-of-type {
+    top: -30%;
+  }
+  .researcher-content {
+    gap: 4rem;
+    padding: 0% 1.5rem 0rem 1.5rem;
+  }
+  .researcher-content > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .researcher-content > div > ul {
+    margin-left: 2rem;
+  }
+  .researcher-item-two {
+    top: -0rem;
+    flex-direction: column;
+  }
+  .researcher-image-2 {
+    padding-right: 0rem;
+    padding-left: 0%;
+    display: flex;
+  }
+  .researcher-image-2 > img:first-of-type {
+    width: 75%;
+    height: auto;
+    top: 0rem;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .researcher-image-2 > img:last-of-type {
+    position: absolute;
+    bottom: 16%;
+    width: 45%;
+  }
+  .researcher-item > img:first-of-type {
+    width: 60%;
+    height: auto;
+    left: auto;
+    right: -12%;
+    top: auto;
+    bottom: 32%;
+  }
+  .researcher-item > img:last-of-type {
+    display: none;
+  }
+  .researcher-content-two > div {
+    left: 0rem;
+  }
+  .researcher-bird {
+    flex-direction: column-reverse;
+    top: 0rem;
+  }
+  .researcher-bird > .researcher-image {
+    position: relative;
+    width: 100%;
+    right: 0;
+    height: auto;
+    top: 0%;
+  }
+  .researcher-content-3 {
+    top: 0rem;
+  }
+  .researcher-bird > .researcher-image > img:last-of-type {
+    width: 120%;
+    left: -10%;
+  }
+  .researcher-image-3 {
+    padding-right: 0rem;
+    left: -12%;
+    height: auto;
+  }
+  .researcher-image-3 > img:first-of-type {
+    width: 130%;
+    height: 100%;
+    top: 0rem;
+    right: 2.3rem;
+  }
+  .padding-research {
+    top: 0rem;
+    width: 100%;
+    left: 0%;
+  }
+  .women-image {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    top: 0rem;
+    right: 0%;
+    order: 3;
+  }
+  .women-view {
+    top: 0rem;
+  }
+  .women-view > img:last-of-type {
+    display: none;
+  }
+  .bottom-intresting {
+    top: 0rem;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -667,5 +1071,17 @@ main > .hero {
   .about-content > div:last-of-type > p {
     font-size: 1.875rem;
     line-height: 3.75rem;
+  }
+  .researcher-content > h2 {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+  .researcher-content > div {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+  .researcher-content > div > h3 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
   }
 }
