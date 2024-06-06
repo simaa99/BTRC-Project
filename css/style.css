@@ -238,7 +238,7 @@ main > .hero {
   padding: 0px 1.688rem;
   max-width: 100%;
 }
-.hero-bottom > button {
+.hero-bottom > a > button {
   background-color: #000000;
   color: #c0c0c0;
   text-transform: uppercase;
@@ -959,6 +959,130 @@ label.error {
   flex-direction: row;
   gap: 1rem;
 }
+.article-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-top: 17rem;
+}
+.container-small {
+  width: 100%;
+  max-width: 58.125rem;
+  margin: 0 auto;
+}
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.article-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+.article-row > div:first-of-type {
+  width: 30%;
+  height: 40rem;
+  object-fit: contain;
+  position: absolute;
+  right: -10%;
+  top: -6rem;
+}
+.article-row > div:first-of-type > img {
+  width: 140%;
+  height: 100%;
+  position: relative;
+  object-fit: contain;
+  top: -7rem;
+  mix-blend-mode: multiply;
+}
+.article-row > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 80%;
+}
+.article-row > div:last-of-type > h3 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  color: #222222;
+  line-height: 3.5rem;
+}
+.article-row > div:last-of-type > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.75rem;
+}
+.article-row > div:last-of-type > div > p:first-of-type {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #222222;
+  line-height: 2.3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article-row > div:last-of-type > div > p:last-of-type {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #222222;
+  line-height: 1.875rem;
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  right: 5%;
+}
+.article-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+.article-description > p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.875rem;
+}
+.article-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+.article-name > img {
+  width: 100%;
+  height: 1px;
+  object-fit: contain;
+  position: absolute;
+  left: -37%;
+}
+.article-name > div {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.article-name > div > p:first-of-type {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.875rem;
+}
+.article-name > div > p:last-of-type {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.875rem;
+}
 
 /* Animation for looping text */
 @keyframes translateLoop {
@@ -1133,6 +1257,23 @@ label.error {
   .footer-line > img:nth-child(2) {
     height: auto;
     top: -2rem;
+  }
+  .article-row > div:last-of-type {
+    width: 75%;
+  }
+
+  .article-row > div:last-of-type > h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .article-row > div:last-of-type > div > p:first-of-type {
+    font-size: 1.8rem;
+  }
+  .article-row > div:last-of-type > div > p:last-of-type {
+    font-size: 1.2rem;
+  }
+  .article-row > div:first-of-type {
+    right: 0%;
   }
 }
 
@@ -1417,6 +1558,33 @@ label.error {
   .cokkies > div > div:last-of-type {
     flex-direction: column;
   }
+  .article-row {
+    flex-direction: column;
+  }
+  .article-row > div:first-of-type {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    top: 0rem;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .article-row > div:first-of-type > img {
+    width: 100%;
+    height: 100%;
+    top: 0rem;
+  }
+
+  .article-row > div:last-of-type {
+    width: 90%;
+  }
+  .article-description {
+    width: 90%;
+  }
+  .article-name {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1449,6 +1617,15 @@ label.error {
   }
   .eye-view {
     top: 40%;
+  }
+  .article-section {
+    padding-top: 10rem;
+  }
+  .article-name > img {
+    left: -75%;
+  }
+  .article-name > div {
+    width: 70%;
   }
 }
 
