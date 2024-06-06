@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
   </head>
   <body>
     <header>
@@ -258,13 +260,110 @@
       <div class="hero-bottom intrested-p bottom-intresting">
         <p>
           All thoughts and developments of the center's partners are posted on
-          the site in several languages.  The best authors and researchers are
-          awarded by Bakkoura Global Time Research Center.
+          the site in several languages. <br />
+          The best authors and researchers are awarded by Bakkoura Global Time
+          Research Center.
         </p>
         <button>interesting</button>
       </div>
     </main>
-    <footer></footer>
+    <!-- Researcher section -->
+    <footer>
+      <div class="footer-line">
+        <img src="/images/Line-left.png" alt="" />
+        <img src="/images/letter.png" alt="" />
+        <img src="/images/Ellipse-footer.png" alt="" />
+        <img src="/images/Line-right.png" alt="" />
+      </div>
+      <div class="footer-contact">
+        <div class="website">
+          <h3>Visit our websites</h3>
+          <div>
+            <a href="https://www.bakkoura.com/">Bakkoura</a>
+            <a href="https://www.francvila.ch/">Francvila</a>
+            <a href="https://www.badreya.com/">Badreya</a>
+          </div>
+          <div class="social-icon">
+            <a href="#">
+              <img src="/images/fb.svg" alt="Facebook" />
+            </a>
+            <a href="#">
+              <img src="/images/inst.svg" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="contact-title">
+            <h3>Contact Us</h3>
+            <p>
+              If you have an idea or desire to cooperate with us, write to us.
+              We respect all requests, but carefully choose our partners.
+            </p>
+          </div>
+          <form id="contactForm" action="" method="post">
+            <div class="form-columns">
+              <div class="column">
+                <input type="text" id="name" name="name" placeholder="Name" />
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  placeholder="Telephone number"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="column">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Text here"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-actions" id="formActions">
+              <label>
+                <input type="checkbox" id="consent" name="consent" />
+                <span>
+                  Your personal data are guaranteed to be safe and will not be
+                  handed over to third parties.
+                  <a href="#">I accept the privacy policy.</a></span
+                >
+              </label>
+              <button type="submit" id="sendButton">Send</button>
+            </div>
+            <p id="formMessage"></p>
+          </form>
+        </div>
+        <div class="image-contact">
+          <img src="/images/footer.png" alt="Contact Image" />
+        </div>
+      </div>
+    </footer>
+    <!-- Researcher section -->
+    <div class="cokkies">
+      <img src="/images/line-cookies.png" alt="line-cookies" />
+      <div>
+        <p>© 2024 Bakkoura Global Time Research Center. ALL RIGHTS RESERVED.</p>
+        <div>
+          <p>
+            We use cookies to provide you with the best browsing experience.
+          </p>
+          <button class="button-cookies">Ok</button>
+        </div>
+        <div>
+          <p>Website designed by</p>
+          <img src="/images/richering.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Include jQuery -->
+
     <script src="js/main.js"></script>
   </body>
 </html>
