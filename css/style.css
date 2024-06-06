@@ -100,7 +100,7 @@ main {
 main > .hero {
   width: 100%;
   display: flex;
-  background-image: url(/images/background-image.svg);
+  background-image: url(../images/background-image.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,7 +201,7 @@ main > .hero {
   position: absolute;
   width: 48rem;
   height: 35rem;
-  background-image: url(/images/ellipse-hero-bottom.png);
+  background-image: url(../images/ellipse-hero-bottom.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -292,7 +292,7 @@ main > .hero {
   position: fixed;
   top: 75%;
   right: 2%;
-  background-image: url(/images/Eye.svg);
+  background-image: url(../images/Eye.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -330,7 +330,7 @@ main > .hero {
   height: 58rem;
   max-width: 100%;
   max-height: 100%;
-  background-image: url(/images/back.png);
+  background-image: url(../images/back.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -772,14 +772,14 @@ footer {
   border: none;
   outline: none;
   cursor: pointer;
-  background-image: url(/images/check-before.png);
+  background-image: url(../images/check-before.png);
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* Checkbox checked state styles */
 .form-actions > label > input[type="checkbox"]:checked {
-  background-image: url(/images/check-after.png);
+  background-image: url(../images/check-after.png);
 }
 .form-actions button {
   padding: 0.5rem 1rem;
