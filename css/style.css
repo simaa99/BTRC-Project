@@ -128,6 +128,7 @@ main > .hero {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 10;
 }
 
 .hero > .hero-content {
@@ -254,21 +255,13 @@ main > .hero {
 
 .hero-bottom-image > img:nth-child(4) {
   position: absolute;
-  width: 25%;
-  top: 178%;
-  right: -10%;
-  transform-origin: 20% -340%;
-}
-
-.hero-bottom-image > img:nth-child(5) {
-  position: absolute;
   width: 40%;
   right: -50%;
   top: -20%;
   transform-origin: -30% 210%;
 }
 
-.hero-bottom-image > img:nth-child(6) {
+.hero-bottom-image > img:nth-child(5) {
   position: absolute;
   width: 15%;
   right: -20%;
@@ -276,7 +269,7 @@ main > .hero {
   transform-origin: 20% -340%;
 }
 
-.hero-bottom-image > img:nth-child(7) {
+.hero-bottom-image > img:nth-child(6) {
   position: absolute;
   width: 10%;
   right: -40%;
@@ -474,8 +467,17 @@ main > .hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
-.about-image > img {
+.about-image > img:nth-child(1) {
+  position: absolute;
+  width: 27%;
+  left: 25%;
+  top: 34%;
+  transform-origin: 20% -150%;
+}
+
+.about-image > img:nth-child(2) {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -781,7 +783,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-x: hidden;
+  overflow: hidden;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -813,11 +815,23 @@ footer {
   position: absolute;
   right: 0;
 }
-.footer-line > img:nth-child(3) {
+.footer-line > div {
   position: absolute;
   width: 25%;
   left: 10%;
   margin-bottom: 7%;
+}
+.footer-line > div > img:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.footer-line > div > img:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 5px;
 }
 .footer-contact {
   display: flex;
@@ -1239,7 +1253,7 @@ label.error {
   .about-image {
     background-size: contain;
   }
-  .about-image > img {
+  .about-image > img:nth-child(2) {
     object-fit: contain;
   }
 }
@@ -1414,6 +1428,9 @@ label.error {
   }
   .article-row > div:first-of-type {
     right: 0%;
+  }
+  .about-image > img:nth-child(1) {
+    top: 38%;
   }
 }
 
@@ -1648,7 +1665,7 @@ label.error {
     top: 0rem;
     height: auto;
   }
-  .footer-line > img:nth-child(3) {
+  .footer-line > div {
     display: none;
   }
   .image-contact {
@@ -1729,6 +1746,12 @@ label.error {
     width: 90%;
     margin: 0 auto;
   }
+  .green-eye {
+    top: -1rem;
+  }
+  .about-image > img:nth-child(1) {
+    top: 27%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1771,6 +1794,9 @@ label.error {
   .article-name > div {
     width: 70%;
   }
+  .footer-line > img:nth-child(2) {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 478px) {
@@ -1796,5 +1822,8 @@ label.error {
   .header-content-back > a {
     top: 8rem;
     padding-left: 5%;
+  }
+  .about-image > img:nth-child(1) {
+    top: 22%;
   }
 }
