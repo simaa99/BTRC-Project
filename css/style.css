@@ -96,6 +96,26 @@ main {
   overflow: hidden;
 }
 
+.header-content-back {
+  display: flex;
+}
+.header-content-back > img {
+  width: 0.4375rem;
+  height: 0.75rem;
+}
+.header-content-back > a {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #222222;
+  line-height: 1.875rem;
+  text-decoration: none;
+  position: relative;
+  top: 8rem;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
 /* Hero section styling */
 main > .hero {
   width: 100%;
@@ -1614,6 +1634,10 @@ label.error {
     right: 0%;
     order: 3;
   }
+  .header-content-back > a {
+    top: 10rem;
+    padding-left: 3%;
+  }
   .women-view {
     top: 0rem;
   }
@@ -1768,5 +1792,9 @@ label.error {
   .researcher-content > div > h3 {
     font-size: 1.5rem;
     line-height: 2.25rem;
+  }
+  .header-content-back > a {
+    top: 8rem;
+    padding-left: 5%;
   }
 }
