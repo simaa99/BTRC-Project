@@ -128,7 +128,6 @@ main > .hero {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 10;
 }
 
 .hero > .hero-content {
@@ -228,7 +227,6 @@ main > .hero {
   background-size: 100% auto;
   left: 26%;
   top: 45%;
-  z-index: 0;
 }
 
 .hero-bottom-image > img:first-of-type {
@@ -243,6 +241,7 @@ main > .hero {
   position: absolute;
   width: 45%;
   transform-origin: 100% -40%;
+  z-index: 100;
 }
 
 .hero-bottom-image > img:nth-child(3) {
@@ -251,6 +250,7 @@ main > .hero {
   top: -70%;
   right: -10%;
   transform-origin: 45% 340%;
+  z-index: 100;
 }
 
 .hero-bottom-image > img:nth-child(4) {
@@ -259,6 +259,7 @@ main > .hero {
   right: -50%;
   top: -20%;
   transform-origin: -30% 210%;
+  z-index: 100;
 }
 
 .hero-bottom-image > img:nth-child(5) {
@@ -267,6 +268,7 @@ main > .hero {
   right: -20%;
   top: 100%;
   transform-origin: 20% -340%;
+  z-index: 100;
 }
 
 .hero-bottom-image > img:nth-child(6) {
@@ -275,6 +277,7 @@ main > .hero {
   right: -40%;
   top: 70%;
   transform-origin: 20% -340%;
+  z-index: 100;
 }
 
 /* Animation Definitions */
@@ -783,7 +786,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
   max-width: 120rem;
   margin: 0 auto;
 }
