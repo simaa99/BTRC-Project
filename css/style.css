@@ -1268,12 +1268,14 @@ label.error {
 .article-item {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   gap: 1rem;
 }
 .article-item > div {
   display: flex;
   flex-direction: column;
+  width: 50%;
   gap: 1.5rem;
 }
 .article-item > div > p {
@@ -1897,6 +1899,9 @@ label.error {
   .bottom-content-scroll::-webkit-scrollbar-thumb:hover {
     background: transparent;
   }
+  .article-item > div {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1941,6 +1946,18 @@ label.error {
   }
   .footer-line > img:nth-child(2) {
     width: 80%;
+  }
+  .top-content-scroll {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .button-scroll {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .button-scroll > button {
+    width: 100%;
   }
 }
 
