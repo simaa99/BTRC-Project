@@ -76,13 +76,78 @@
                 <img src="../images/article-2.png" alt="lion-article" />
               </div>
               <div>
+                <div class="content-scroll">
+                  <div class="top-content-scroll">
+                    <div class="title-scroll">
+                      <h2>Psychology of time</h2>
+                    </div>
+                    <div class="button-scroll">
+                      <p>Read more articles</p>
+                      <button class="button-content">
+                        Here
+                        <img src="../images/r-icon.png" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bottom-content-scroll">
+                    <div class="article-item">
+                      <div>
+                        <p>New Article Coming Soon</p>
+                        <a>
+                          <img src="../images/read-image.png" alt="" />
+                          <p>Read</p>
+                        </a>
+                      </div>
+                      <div>
+                        <p>New Article Coming Soon</p>
+                        <a>
+                          <img src="../images/read-image.png" alt="" />
+                          <p>Read</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="article-item">
+                      <div>
+                        <p>New Article Coming Soon</p>
+                        <a>
+                          <img src="../images/read-image.png" alt="" />
+                          <p>Read</p>
+                        </a>
+                      </div>
+                      <div>
+                        <p>New Article Coming Soon</p>
+                        <a>
+                          <img src="../images/read-image.png" alt="" />
+                          <p>Read</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="article-item">
+                      <div>
+                        <p>New Article Coming Soon</p>
+                        <a>
+                          <img src="../images/read-image.png" alt="" />
+                          <p>Read</p>
+                        </a>
+                      </div>
+                      <div>
+                        <p>New Article Coming Soon</p>
+                        <a>
+                          <img src="../images/read-image.png" alt="" />
+                          <p>Read</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
                 <h3>
                   Emotional moments:
                   <br />
                   How emotions drive our perception of time and how we can
                   manage them to manipulate our life and time
                 </h3>
-                <div>
+                <div class="qoute">
                   <p>
                     When dealing with people, remember: you are not dealing with
                     creatures of logic, but with creatures of emotion.
@@ -367,6 +432,18 @@
         </div>
       </div>
     </div>
+    <script>
+      document
+        .querySelector(".button-content")
+        .addEventListener("click", function () {
+          var content = document.querySelector(".bottom-content-scroll");
+          if (content.style.display === "flex") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "flex";
+          }
+        });
+    </script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- Include jQuery -->
 
