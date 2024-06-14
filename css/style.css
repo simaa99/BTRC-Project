@@ -64,8 +64,8 @@ header {
 .wetrust-text,
 .wetrust-dash {
   display: inline-block;
-  color: #828282;
   padding: 0 2px;
+  color: #888888; /* Medium gray text */
 }
 
 /* Navigation styling */
