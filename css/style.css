@@ -66,6 +66,7 @@ header {
   display: inline-block;
   padding: 0 2px;
   color: #888888; /* Medium gray text */
+  background-color: #272727;
 }
 
 /* Navigation styling */
